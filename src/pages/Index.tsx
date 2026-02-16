@@ -1,8 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import PriceSection from "@/components/PriceSection";
-import BookingSection from "@/components/BookingSection";
 import ContactsSection from "@/components/ContactsSection";
-import FooterSection from "@/components/FooterSection";
 
 const Index = () => {
   return (
@@ -14,7 +12,6 @@ const Index = () => {
         <div className="hidden md:flex gap-8">
           {[
             { label: "Прайс", href: "#price" },
-            { label: "Запись", href: "#booking" },
             { label: "Контакты", href: "#contacts" },
           ].map((link) => (
             <a
@@ -30,9 +27,14 @@ const Index = () => {
 
       <HeroSection />
       <PriceSection />
-      <BookingSection />
       <ContactsSection />
-      <FooterSection />
+
+      <footer className="border-t border-gold/10 py-10 px-6">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          <span className="font-display text-2xl gold-text-gradient">VISAGE</span>
+          <span className="font-body text-xs text-foreground/20">© 2026 VISAGE</span>
+        </div>
+      </footer>
     </div>
   );
 };

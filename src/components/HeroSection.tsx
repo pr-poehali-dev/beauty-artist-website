@@ -43,14 +43,14 @@ const HeroSection = () => {
             asChild
             className="bg-gold text-black hover:bg-gold-light font-body text-xs tracking-[0.2em] uppercase px-10 py-6 rounded-none"
           >
-            <a href="#booking">Записаться</a>
+            <a href="#price">Прайс-лист</a>
           </Button>
           <Button
             asChild
             variant="outline"
             className="border-gold/30 text-gold hover:bg-gold/10 font-body text-xs tracking-[0.2em] uppercase px-10 py-6 rounded-none"
           >
-            <a href="#price">Прайс-лист</a>
+            <a href="#contacts">Контакты</a>
           </Button>
         </div>
       </div>
