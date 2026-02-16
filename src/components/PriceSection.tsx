@@ -30,22 +30,22 @@ const PriceSection = () => {
     <section id="price" className="py-24 md:py-32 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-20">
-          <span className="text-gold uppercase tracking-[0.4em] text-xs font-body font-light">
+          <span className="uppercase tracking-[0.4em] text-xs font-body font-light text-foreground/40">
             Услуги
           </span>
-          <h2 className="font-display text-5xl md:text-6xl font-light mt-4 gold-text-gradient">
+          <h2 className="font-display text-5xl md:text-6xl font-light mt-4 text-foreground">
             Прайс-лист
           </h2>
-          <div className="w-16 h-[1px] bg-gold/30 mx-auto mt-6" />
+          <div className="w-16 h-[1px] bg-foreground/15 mx-auto mt-6" />
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((group) => (
             <div
               key={group.category}
-              className="border border-gold/10 p-8 hover:border-gold/30 transition-all duration-500 group"
+              className="border border-border p-8 hover:border-foreground/20 transition-all duration-500 group bg-card"
             >
-              <h3 className="font-display text-2xl text-gold mb-8 text-center group-hover:gold-text-gradient transition-all">
+              <h3 className="font-display text-2xl text-foreground mb-8 text-center">
                 {group.category}
               </h3>
 
@@ -53,16 +53,16 @@ const PriceSection = () => {
                 {group.items.map((item) => (
                   <div key={item.name} className="space-y-2">
                     <div className="flex justify-between items-baseline">
-                      <span className="font-body text-sm text-foreground/80">
+                      <span className="font-body text-sm text-foreground/70">
                         {item.name}
                       </span>
-                      <span className="font-display text-lg text-gold">
+                      <span className="font-display text-lg text-foreground">
                         {item.price}
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="flex-1 h-[1px] bg-gold/10" />
-                      <span className="font-body text-[10px] text-foreground/40 uppercase tracking-wider">
+                      <div className="flex-1 h-[1px] bg-border" />
+                      <span className="font-body text-[10px] text-foreground/35 uppercase tracking-wider">
                         {item.duration}
                       </span>
                     </div>

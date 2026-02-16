@@ -4,48 +4,44 @@
 
 @layer base {
   :root {
-    --background: 0 0% 7%;
-    --foreground: 40 20% 92%;
+    --background: 0 0% 98%;
+    --foreground: 0 0% 12%;
 
-    --card: 0 0% 10%;
-    --card-foreground: 40 20% 92%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 40 20% 92%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
 
-    --primary: 43 72% 55%;
-    --primary-foreground: 0 0% 5%;
+    --primary: 0 0% 12%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 0 0% 14%;
-    --secondary-foreground: 40 20% 85%;
+    --secondary: 0 0% 94%;
+    --secondary-foreground: 0 0% 20%;
 
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 55%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 50%;
 
-    --accent: 43 72% 55%;
-    --accent-foreground: 0 0% 5%;
+    --accent: 0 0% 94%;
+    --accent-foreground: 0 0% 12%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 43 72% 55%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 12%;
 
     --radius: 0.25rem;
 
-    --sidebar-background: 0 0% 7%;
-    --sidebar-foreground: 40 20% 92%;
-    --sidebar-primary: 43 72% 55%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 14%;
-    --sidebar-accent-foreground: 40 20% 92%;
-    --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 43 72% 55%;
-
-    --gold: 43 72% 55%;
-    --gold-light: 43 60% 70%;
-    --gold-dark: 43 80% 40%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 12%;
+    --sidebar-primary: 0 0% 12%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 94%;
+    --sidebar-accent-foreground: 0 0% 12%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 0 0% 12%;
   }
 }
 
@@ -77,39 +73,6 @@
   .font-body {
     font-family: "Montserrat", sans-serif;
   }
-
-  .text-gold {
-    color: hsl(43 72% 55%);
-  }
-
-  .bg-gold {
-    background-color: hsl(43 72% 55%);
-  }
-
-  .border-gold {
-    border-color: hsl(43 72% 55% / 0.3);
-  }
-
-  .gold-gradient {
-    background: linear-gradient(
-      135deg,
-      hsl(43 80% 45%),
-      hsl(43 60% 65%),
-      hsl(43 80% 45%)
-    );
-  }
-
-  .gold-text-gradient {
-    background: linear-gradient(
-      135deg,
-      hsl(43 60% 65%),
-      hsl(43 80% 50%),
-      hsl(43 60% 70%)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
 }
 
 html {
@@ -117,6 +80,6 @@ html {
 }
 
 ::selection {
-  background: hsl(43 72% 55% / 0.3);
-  color: hsl(40 20% 95%);
+  background: hsl(0 0% 12% / 0.15);
+  color: hsl(0 0% 5%);
 }

@@ -23,11 +23,6 @@ export default {
 		},
 		extend: {
 			colors: {
-				gold: {
-					DEFAULT: 'hsl(43 72% 55%)',
-					light: 'hsl(43 60% 70%)',
-					dark: 'hsl(43 80% 40%)',
-				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
